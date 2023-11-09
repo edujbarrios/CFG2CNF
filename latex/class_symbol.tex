@@ -1,0 +1,203 @@
+\doxysection{Symbol Class Reference}
+\hypertarget{class_symbol}{}\label{class_symbol}\index{Symbol@{Symbol}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symbol_a432cd3d5169c52d8c83f0b92d388ae6e}{Symbol}} (const std\+::string)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_symbol}{Symbol}\+:\+: \doxylink{class_symbol}{Symbol} object. \end{DoxyCompactList}\item 
+\Hypertarget{class_symbol_a23461ff4b2135959cd12fcba93c9107a}\label{class_symbol_a23461ff4b2135959cd12fcba93c9107a} 
+{\bfseries Symbol} (char)
+\item 
+\Hypertarget{class_symbol_a505360ad4bd2e0bd1e3954eca1b05723}\label{class_symbol_a505360ad4bd2e0bd1e3954eca1b05723} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Symbol} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \doxylink{class_symbol}{Symbol}\+:\+: \doxylink{class_symbol}{Symbol} object. \end{DoxyCompactList}\item 
+const char \mbox{\hyperlink{class_symbol_a1d9f97faa5b680e8c6407825bdb5996b}{position}} (int)
+\begin{DoxyCompactList}\small\item\em Devuelve el caracter que ocupa index posicion. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_symbol_a7510b58ae1ec3c724377b754fdbd3f68}{Size}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el numero de caracteres del simbolo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_symbol_afac1d10a0d24644665d12d7c7cd91555}{Check\+Simbols}} (\mbox{\hyperlink{class_symbol}{Symbol}})
+\begin{DoxyCompactList}\small\item\em Comprueba que no contiene el caracter reservado para la cadena vacía. \end{DoxyCompactList}\item 
+\Hypertarget{class_symbol_ab35e838e67472a54a9c6d05c1041f6b7}\label{class_symbol_ab35e838e67472a54a9c6d05c1041f6b7} 
+std\+::string\+::const\+\_\+iterator {\bfseries begin} () const
+\item 
+\Hypertarget{class_symbol_ab78090a6844607babf16c51e105499ac}\label{class_symbol_ab78090a6844607babf16c51e105499ac} 
+std\+::string\+::const\+\_\+iterator {\bfseries end} () const
+\item 
+\Hypertarget{class_symbol_a891d2671ea99cd9ac4d5eafda88b960e}\label{class_symbol_a891d2671ea99cd9ac4d5eafda88b960e} 
+void {\bfseries operator=} (const \mbox{\hyperlink{class_symbol}{Symbol}})
+\item 
+bool \mbox{\hyperlink{class_symbol_a388f598869682d0780a9de2954f2ecf1}{operator==}} (const \mbox{\hyperlink{class_symbol}{Symbol}}) const
+\item 
+bool \mbox{\hyperlink{class_symbol_a10f2c598925a7004bc6d8da81572a997}{operator==}} (const \mbox{\hyperlink{class_symbol}{Symbol}})
+\item 
+bool \mbox{\hyperlink{class_symbol_aa8ad4e23190b55ce01c84ba4e6bc6809}{operator==}} (const std\+::string)
+\item 
+bool \mbox{\hyperlink{class_symbol_aae3290dd4771fb1c2633fb4054c7e2a7}{operator$<$}} (const \mbox{\hyperlink{class_symbol}{Symbol}}) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga operador \textquotesingle{}\texorpdfstring{$<$}{<}\textquotesingle{} para trabajar con la clase std\+::set. \end{DoxyCompactList}\item 
+\Hypertarget{class_symbol_a1de7a2f1ed28d628eb6f965fc3e23c9a}\label{class_symbol_a1de7a2f1ed28d628eb6f965fc3e23c9a} 
+{\bfseries operator std\+::string} (void) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_symbol_ad17db584d9278e4da29c9c9e68d21190}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_symbol}{Symbol}} \&)
+\begin{DoxyCompactList}\small\item\em Sobrecarga operador \textquotesingle{}\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\textquotesingle{} para escritura del objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symbol_a432cd3d5169c52d8c83f0b92d388ae6e}\label{class_symbol_a432cd3d5169c52d8c83f0b92d388ae6e} 
+\index{Symbol@{Symbol}!Symbol@{Symbol}}
+\index{Symbol@{Symbol}!Symbol@{Symbol}}
+\doxysubsubsection{\texorpdfstring{Symbol()}{Symbol()}}
+{\footnotesize\ttfamily Symbol\+::\+Symbol (\begin{DoxyParamCaption}\item[{const std\+::string}]{param\+String }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_symbol}{Symbol}\+:\+: \doxylink{class_symbol}{Symbol} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+String} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symbol_afac1d10a0d24644665d12d7c7cd91555}\label{class_symbol_afac1d10a0d24644665d12d7c7cd91555} 
+\index{Symbol@{Symbol}!CheckSimbols@{CheckSimbols}}
+\index{CheckSimbols@{CheckSimbols}!Symbol@{Symbol}}
+\doxysubsubsection{\texorpdfstring{CheckSimbols()}{CheckSimbols()}}
+{\footnotesize\ttfamily bool Symbol\+::\+Check\+Simbols (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symbol}{Symbol}}}]{param\+Symbol }\end{DoxyParamCaption})}
+
+
+
+Comprueba que no contiene el caracter reservado para la cadena vacía. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Symbol} & Simbolo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la cadena es correcta y false en caso contrario 
+\end{DoxyReturn}
+\Hypertarget{class_symbol_aae3290dd4771fb1c2633fb4054c7e2a7}\label{class_symbol_aae3290dd4771fb1c2633fb4054c7e2a7} 
+\index{Symbol@{Symbol}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Symbol@{Symbol}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Symbol\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_symbol}{Symbol}}}]{param\+\_\+symbol }\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga operador \textquotesingle{}\texorpdfstring{$<$}{<}\textquotesingle{} para trabajar con la clase std\+::set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+\_\+symbol} & Simbolo candidato a entrar en el conjunto \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True si el elemento no esta en el conjunto. False en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{class_symbol_aa8ad4e23190b55ce01c84ba4e6bc6809}\label{class_symbol_aa8ad4e23190b55ce01c84ba4e6bc6809} 
+\index{Symbol@{Symbol}!operator==@{operator==}}
+\index{operator==@{operator==}!Symbol@{Symbol}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool Symbol\+::operator== (\begin{DoxyParamCaption}\item[{const std\+::string}]{param\+String }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Symbol} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_symbol_a10f2c598925a7004bc6d8da81572a997}\label{class_symbol_a10f2c598925a7004bc6d8da81572a997} 
+\index{Symbol@{Symbol}!operator==@{operator==}}
+\index{operator==@{operator==}!Symbol@{Symbol}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool Symbol\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_symbol}{Symbol}}}]{param\+Symbol }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Symbol} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_symbol_a388f598869682d0780a9de2954f2ecf1}\label{class_symbol_a388f598869682d0780a9de2954f2ecf1} 
+\index{Symbol@{Symbol}!operator==@{operator==}}
+\index{operator==@{operator==}!Symbol@{Symbol}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool Symbol\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_symbol}{Symbol}}}]{param\+Symbol }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Symbol} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_symbol_a1d9f97faa5b680e8c6407825bdb5996b}\label{class_symbol_a1d9f97faa5b680e8c6407825bdb5996b} 
+\index{Symbol@{Symbol}!position@{position}}
+\index{position@{position}!Symbol@{Symbol}}
+\doxysubsubsection{\texorpdfstring{position()}{position()}}
+{\footnotesize\ttfamily const char Symbol\+::position (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Devuelve el caracter que ocupa index posicion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Posicion a la que se quiere acceder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Caracter 
+\end{DoxyReturn}
+\Hypertarget{class_symbol_a7510b58ae1ec3c724377b754fdbd3f68}\label{class_symbol_a7510b58ae1ec3c724377b754fdbd3f68} 
+\index{Symbol@{Symbol}!Size@{Size}}
+\index{Size@{Size}!Symbol@{Symbol}}
+\doxysubsubsection{\texorpdfstring{Size()}{Size()}}
+{\footnotesize\ttfamily int Symbol\+::\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Devuelve el numero de caracteres del simbolo. 
+
+\begin{DoxyReturn}{Returns}
+Numero de caracteres ASCII del simbolo 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_symbol_ad17db584d9278e4da29c9c9e68d21190}\label{class_symbol_ad17db584d9278e4da29c9c9e68d21190} 
+\index{Symbol@{Symbol}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Symbol@{Symbol}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_symbol}{Symbol}} \&}]{param\+\_\+symbol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga operador \textquotesingle{}\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\textquotesingle{} para escritura del objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & std\+::ostream \\
+\hline
+{\em param\+\_\+symbol} & Simbolo a escribir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::ostream\& 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simbolo.\+h\item 
+simbolo.\+cc\end{DoxyCompactItemize}

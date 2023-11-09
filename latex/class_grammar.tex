@@ -1,0 +1,99 @@
+\doxysection{Grammar Class Reference}
+\hypertarget{class_grammar}{}\label{class_grammar}\index{Grammar@{Grammar}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_grammar_a2341ca5e7a962261237a2e00c361f34b}\label{class_grammar_a2341ca5e7a962261237a2e00c361f34b} 
+{\bfseries Grammar} (std\+::string)
+\item 
+\Hypertarget{class_grammar_a91176c42200668b2513dc4c0723747e7}\label{class_grammar_a91176c42200668b2513dc4c0723747e7} 
+{\bfseries Grammar} (\mbox{\hyperlink{class_grammar}{Grammar}} \&)
+\item 
+\Hypertarget{class_grammar_a60e8bade0190ee9830d9c600e4216b36}\label{class_grammar_a60e8bade0190ee9830d9c600e4216b36} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Grammar} ()
+\begin{DoxyCompactList}\small\item\em Destruye el objeto \doxylink{class_grammar}{Grammar}. \end{DoxyCompactList}\item 
+\Hypertarget{class_grammar_aa3d2a9c4596c7b2c1103ad29c7e03b7e}\label{class_grammar_aa3d2a9c4596c7b2c1103ad29c7e03b7e} 
+void {\bfseries add\+Non\+Terminal\+Symbol} (\mbox{\hyperlink{class_symbol}{Symbol}})
+\item 
+void \mbox{\hyperlink{class_grammar_a0f43976ad016e9fba598163d55a6450f}{add\+Production\+Rule}} (\mbox{\hyperlink{class_production}{Production}})
+\begin{DoxyCompactList}\small\item\em Método que añade transiciones al \doxylink{class_grammar}{Grammar}. Se comprueba que ambos estados pertenecen al conjunto de estados del \doxylink{class_grammar}{Grammar} y que el símbolo pertenece al Alfabeto. \end{DoxyCompactList}\item 
+\Hypertarget{class_grammar_a779771f85e615e751d73d05db541868a}\label{class_grammar_a779771f85e615e751d73d05db541868a} 
+void {\bfseries add\+Terminal\+Symbol} (\mbox{\hyperlink{class_symbol}{Symbol}})
+\item 
+\Hypertarget{class_grammar_a340254c2c36557127cc5d776a9eb1eee}\label{class_grammar_a340254c2c36557127cc5d776a9eb1eee} 
+bool {\bfseries check\+Grammar} ()
+\item 
+\Hypertarget{class_grammar_ab7a8ae1339e4f42108518652f8ccccb0}\label{class_grammar_ab7a8ae1339e4f42108518652f8ccccb0} 
+void {\bfseries convert\+To\+CNF} ()
+\item 
+\Hypertarget{class_grammar_a97efc2ea9c321ea1eb2e598aae40c652}\label{class_grammar_a97efc2ea9c321ea1eb2e598aae40c652} 
+\mbox{\hyperlink{class_grammar}{Grammar}} {\bfseries get\+CNFGrammar} ()
+\item 
+\Hypertarget{class_grammar_a2d80f169cfdd99c0289c1b053f54bbe0}\label{class_grammar_a2d80f169cfdd99c0289c1b053f54bbe0} 
+bool {\bfseries is\+Regular} ()
+\item 
+\Hypertarget{class_grammar_aec5623aef31a905305df390f2b5c2692}\label{class_grammar_aec5623aef31a905305df390f2b5c2692} 
+void {\bfseries set\+Start\+Symbol} (std\+::string)
+\item 
+\Hypertarget{class_grammar_a5cfceaec318c69393604e0d090b84454}\label{class_grammar_a5cfceaec318c69393604e0d090b84454} 
+void {\bfseries write\+File} (std\+::string)
+\item 
+\Hypertarget{class_grammar_afcdb76df24074d9e696e4b1c6cb8ac81}\label{class_grammar_afcdb76df24074d9e696e4b1c6cb8ac81} 
+void {\bfseries operator=} (const \mbox{\hyperlink{class_grammar}{Grammar}} \&)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_grammar_a02d36b61524c927d7c8753fd3ac87e38}{operator$<$$<$}} (std\+::ostream \&, \mbox{\hyperlink{class_grammar}{Grammar}} \&)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de escritura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_grammar_a0f43976ad016e9fba598163d55a6450f}\label{class_grammar_a0f43976ad016e9fba598163d55a6450f} 
+\index{Grammar@{Grammar}!addProductionRule@{addProductionRule}}
+\index{addProductionRule@{addProductionRule}!Grammar@{Grammar}}
+\doxysubsubsection{\texorpdfstring{addProductionRule()}{addProductionRule()}}
+{\footnotesize\ttfamily void Grammar\+::add\+Production\+Rule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_production}{Production}}}]{param\+Production }\end{DoxyParamCaption})}
+
+
+
+Método que añade transiciones al \doxylink{class_grammar}{Grammar}. Se comprueba que ambos estados pertenecen al conjunto de estados del \doxylink{class_grammar}{Grammar} y que el símbolo pertenece al Alfabeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em actual\+State\+Id} & Estado origen \\
+\hline
+{\em param\+Symbol} & Símbolo \\
+\hline
+{\em next\+State\+Id} & Estado destino \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_grammar_a02d36b61524c927d7c8753fd3ac87e38}\label{class_grammar_a02d36b61524c927d7c8753fd3ac87e38} 
+\index{Grammar@{Grammar}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Grammar@{Grammar}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{class_grammar}{Grammar}} \&}]{param\+Grammar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga del operador de escritura. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & \\
+\hline
+{\em param\+Grammar} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::ostream\& 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+grammar.\+h\item 
+grammar.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\doxysection{cadena.\+h}
+\hypertarget{cadena_8h_source}{}\label{cadena_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//Universidad\ de\ la\ laguna}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//Curso\ 23\_34}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//Asignatura:\ Computabildad\ y\ algoritmia}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//autor:\ Eduardo\ José\ Barrios\ García}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//nombre\ de\ práctica:\ p07\_grammar2cnf}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}simbolo.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_chain}{Chain}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \textcolor{comment}{//\ Constructores\ y\ destructores}}
+\DoxyCodeLine{00017\ \ \ \mbox{\hyperlink{class_chain_a2d0a3ba99af01718bacff6aaae1f2560}{Chain}}();}
+\DoxyCodeLine{00018\ \ \ \mbox{\hyperlink{class_chain_a2d0a3ba99af01718bacff6aaae1f2560}{Chain}}(\mbox{\hyperlink{class_symbol}{Symbol}});}
+\DoxyCodeLine{00019\ \ \ \mbox{\hyperlink{class_chain_a2d0a3ba99af01718bacff6aaae1f2560}{Chain}}(std::vector<Symbol>);}
+\DoxyCodeLine{00020\ \ \ \mbox{\hyperlink{class_chain_a2d0a3ba99af01718bacff6aaae1f2560}{Chain}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_chain}{Chain}}\ \&);\ \textcolor{comment}{//\ Constructor\ de\ copia}}
+\DoxyCodeLine{00021\ \ \ \mbox{\hyperlink{class_chain_a2d0a3ba99af01718bacff6aaae1f2560}{Chain}}(std::string);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \textcolor{comment}{//\ Getters\ y\ setters}}
+\DoxyCodeLine{00024\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chain_aa589c74255a091de42c03a2c02be25ae}{assign}}(\textcolor{keywordtype}{int},\ \mbox{\hyperlink{class_symbol}{Symbol}});}
+\DoxyCodeLine{00025\ \ \ \mbox{\hyperlink{class_symbol}{Symbol}}\ \mbox{\hyperlink{class_chain_a1f6d1d14cb1cad8000772db209ba06bf}{back}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ \ \ \mbox{\hyperlink{class_symbol}{Symbol}}\ \mbox{\hyperlink{class_chain_a072a90480fdb69fdceeefb7f417b8aef}{Position}}(\textcolor{keywordtype}{int})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_chain_aaf97f1ab4c2c0efe12eec72de396f650}{Size}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \textcolor{comment}{//\ Iteradores}}
+\DoxyCodeLine{00030\ \ \ std::vector<Symbol>::const\_iterator\ \mbox{\hyperlink{class_chain_af2abd653a03397d3e31caee818aecf32}{begin}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ std::vector<Symbol>::const\_iterator\ \mbox{\hyperlink{class_chain_a6da78591eebaf8a3fbf29dfa22f56da7}{end}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ }
+\DoxyCodeLine{00034\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chain_a08d951079800d3fa85fa2e344b9ef444}{AddSymbol}}(\mbox{\hyperlink{class_symbol}{Symbol}});}
+\DoxyCodeLine{00035\ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_chain}{Chain}}\ \mbox{\hyperlink{class_chain_ab1e67dba6e98e2504cf8e40e90105157}{Concatenate}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_chain}{Chain}}\ \&,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_chain}{Chain}}\ \&);}
+\DoxyCodeLine{00036\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_chain_a721aade6fda63524b87984382f16afce}{inSymbol}}(\mbox{\hyperlink{class_symbol}{Symbol}});}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \textcolor{comment}{//\ Sobrecarga\ operadores}}
+\DoxyCodeLine{00040\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_chain_a24717a4b0ad25e56444805cad5849438}{operator<}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_chain}{Chain}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \ \ \textcolor{keyword}{friend}\ std::ostream\ \&\mbox{\hyperlink{class_chain_a78920682b6469e52b8fd94b062043b05}{operator<<}}(std::ostream\ \&,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_chain}{Chain}}\ \&);}
+\DoxyCodeLine{00042\ \ \ \textcolor{keywordtype}{void}\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_chain}{Chain}});}
+\DoxyCodeLine{00043\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_chain_afd36eb95a5c92d455a700f5e76222dc5}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_chain}{Chain}}\ \&)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ \ \ std::vector<Symbol>\ chain\_;}
+\DoxyCodeLine{00047\ \};}
+
+\end{DoxyCode}

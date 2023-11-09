@@ -1,0 +1,206 @@
+\doxysection{Production Class Reference}
+\hypertarget{class_production}{}\label{class_production}\index{Production@{Production}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_production_aa7e70b14de86436d21d286c520d90243}{Production}} (\mbox{\hyperlink{class_symbol}{Symbol}}, \mbox{\hyperlink{class_chain}{Chain}})
+\begin{DoxyCompactList}\small\item\em Constructor para un objeto \doxylink{class_production}{Production}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_production_ab1c63e8d8f211c25ce86acf9cd44068a}{Production}} (\mbox{\hyperlink{class_symbol}{Symbol}}, \mbox{\hyperlink{class_symbol}{Symbol}})
+\begin{DoxyCompactList}\small\item\em Constructor para un objeto \doxylink{class_production}{Production} con un solo símbolo. \end{DoxyCompactList}\item 
+\Hypertarget{class_production_ab5b3060f9e0a2bc189844e426d693dab}\label{class_production_ab5b3060f9e0a2bc189844e426d693dab} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Production} ()
+\begin{DoxyCompactList}\small\item\em Destructor para el objeto \doxylink{class_production}{Production}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_chain}{Chain}} \mbox{\hyperlink{class_production_a33b36b860ceedd1c8a8ea150400a14a6}{get\+Chain}} () const
+\begin{DoxyCompactList}\small\item\em Getter para la cadena de símbolos producidos. Objeto constante. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_chain}{Chain}} \mbox{\hyperlink{class_production_a68c0d5bfb7b30145b6a1bdba43a9a82b}{get\+Chain}} ()
+\begin{DoxyCompactList}\small\item\em Getter para la cadena de símbolos producidos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_symbol}{Symbol}} \mbox{\hyperlink{class_production_ae71c349fb19cb41cdc7c2ab1b6834714}{get\+Non\+Final\+Symbol}} () const
+\begin{DoxyCompactList}\small\item\em Getter para el símbolo no terminal de la producción. Objeto constante. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_symbol}{Symbol}} \mbox{\hyperlink{class_production_a1b56b7dac867481eabd7dddedd7aea6a}{get\+Non\+Final\+Symbol}} ()
+\begin{DoxyCompactList}\small\item\em Getter para el símbolo no terminal de la producción. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_production_a5f0810ffc00d6ebda3ee407c0759098c}{get\+Type}} (std\+::set$<$ \mbox{\hyperlink{class_symbol}{Symbol}} $>$)
+\begin{DoxyCompactList}\small\item\em Obtiene el tipo de regularidad. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_production_a23508bcf09d94b27c84dc3c4bb59bbc8}{operator$<$}} (const \mbox{\hyperlink{class_production}{Production}}) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador \textquotesingle{}\texorpdfstring{$<$}{<}\textquotesingle{} para trabajar con std\+::set. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_production_a29cfeb14daa371f325dda6f2542db0f5}{operator=}} (const \mbox{\hyperlink{class_production}{Production}})
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de asignación. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_production_ab543c4c4938fa07d1447884c97bdfe60}{operator==}} (const \mbox{\hyperlink{class_production}{Production}}) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de comparación de igualdad. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_production_a1dcdd6c9e9f12d221451c39b383d7a27}\label{class_production_a1dcdd6c9e9f12d221451c39b383d7a27} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&, \mbox{\hyperlink{class_production}{Production}} \&)
+\item 
+\Hypertarget{class_production_a611508635ce57d60dd16f872a990d015}\label{class_production_a611508635ce57d60dd16f872a990d015} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&, const \mbox{\hyperlink{class_production}{Production}} \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_production_aa7e70b14de86436d21d286c520d90243}\label{class_production_aa7e70b14de86436d21d286c520d90243} 
+\index{Production@{Production}!Production@{Production}}
+\index{Production@{Production}!Production@{Production}}
+\doxysubsubsection{\texorpdfstring{Production()}{Production()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Production\+::\+Production (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symbol}{Symbol}}}]{non\+Terminal\+Symbol,  }\item[{\mbox{\hyperlink{class_chain}{Chain}}}]{param\+Chain }\end{DoxyParamCaption})}
+
+
+
+Constructor para un objeto \doxylink{class_production}{Production}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em non\+Terminal\+Symbol} & El símbolo no terminal. \\
+\hline
+{\em param\+Chain} & La cadena de símbolos. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_production_ab1c63e8d8f211c25ce86acf9cd44068a}\label{class_production_ab1c63e8d8f211c25ce86acf9cd44068a} 
+\index{Production@{Production}!Production@{Production}}
+\index{Production@{Production}!Production@{Production}}
+\doxysubsubsection{\texorpdfstring{Production()}{Production()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Production\+::\+Production (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symbol}{Symbol}}}]{non\+Terminal\+Symbol,  }\item[{\mbox{\hyperlink{class_symbol}{Symbol}}}]{symbol }\end{DoxyParamCaption})}
+
+
+
+Constructor para un objeto \doxylink{class_production}{Production} con un solo símbolo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em non\+Terminal\+Symbol} & El símbolo no terminal. \\
+\hline
+{\em symbol} & El símbolo único. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_production_a68c0d5bfb7b30145b6a1bdba43a9a82b}\label{class_production_a68c0d5bfb7b30145b6a1bdba43a9a82b} 
+\index{Production@{Production}!getChain@{getChain}}
+\index{getChain@{getChain}!Production@{Production}}
+\doxysubsubsection{\texorpdfstring{getChain()}{getChain()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_chain}{Chain}} Production\+::get\+Chain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter para la cadena de símbolos producidos. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_chain}{Chain} 
+\end{DoxyReturn}
+\Hypertarget{class_production_a33b36b860ceedd1c8a8ea150400a14a6}\label{class_production_a33b36b860ceedd1c8a8ea150400a14a6} 
+\index{Production@{Production}!getChain@{getChain}}
+\index{getChain@{getChain}!Production@{Production}}
+\doxysubsubsection{\texorpdfstring{getChain()}{getChain()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_chain}{Chain}} Production\+::get\+Chain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter para la cadena de símbolos producidos. Objeto constante. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_chain}{Chain} 
+\end{DoxyReturn}
+\Hypertarget{class_production_a1b56b7dac867481eabd7dddedd7aea6a}\label{class_production_a1b56b7dac867481eabd7dddedd7aea6a} 
+\index{Production@{Production}!getNonFinalSymbol@{getNonFinalSymbol}}
+\index{getNonFinalSymbol@{getNonFinalSymbol}!Production@{Production}}
+\doxysubsubsection{\texorpdfstring{getNonFinalSymbol()}{getNonFinalSymbol()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_symbol}{Symbol}} Production\+::get\+Non\+Final\+Symbol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter para el símbolo no terminal de la producción. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_symbol}{Symbol} 
+\end{DoxyReturn}
+\Hypertarget{class_production_ae71c349fb19cb41cdc7c2ab1b6834714}\label{class_production_ae71c349fb19cb41cdc7c2ab1b6834714} 
+\index{Production@{Production}!getNonFinalSymbol@{getNonFinalSymbol}}
+\index{getNonFinalSymbol@{getNonFinalSymbol}!Production@{Production}}
+\doxysubsubsection{\texorpdfstring{getNonFinalSymbol()}{getNonFinalSymbol()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_symbol}{Symbol}} Production\+::get\+Non\+Final\+Symbol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter para el símbolo no terminal de la producción. Objeto constante. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_symbol}{Symbol} 
+\end{DoxyReturn}
+\Hypertarget{class_production_a5f0810ffc00d6ebda3ee407c0759098c}\label{class_production_a5f0810ffc00d6ebda3ee407c0759098c} 
+\index{Production@{Production}!getType@{getType}}
+\index{getType@{getType}!Production@{Production}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily int Production\+::get\+Type (\begin{DoxyParamCaption}\item[{std\+::set$<$ \mbox{\hyperlink{class_symbol}{Symbol}} $>$}]{param\+Non\+Terminal }\end{DoxyParamCaption})}
+
+
+
+Obtiene el tipo de regularidad. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Non\+Terminal} & El conjunto de símbolos no terminales en la gramática. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\+: -\/1 No regular \texorpdfstring{$\vert$}{|} 0 Regular izquierda y derecha \texorpdfstring{$\vert$}{|} 1 Regular izquierda \texorpdfstring{$\vert$}{|} 2 Regular derecha 
+\end{DoxyReturn}
+\Hypertarget{class_production_a23508bcf09d94b27c84dc3c4bb59bbc8}\label{class_production_a23508bcf09d94b27c84dc3c4bb59bbc8} 
+\index{Production@{Production}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Production@{Production}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Production\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_production}{Production}}}]{param\+Production\+Rule }\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador \textquotesingle{}\texorpdfstring{$<$}{<}\textquotesingle{} para trabajar con std\+::set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Production\+Rule} & Objeto \doxylink{class_production}{Production} candidato para entrar en el std\+::set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True -\/ El objeto \doxylink{class_production}{Production} no está en el conjunto. 
+
+False -\/ El objeto \doxylink{class_production}{Production} está en el conjunto. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+std\+::set 
+\end{DoxySeeAlso}
+\Hypertarget{class_production_a29cfeb14daa371f325dda6f2542db0f5}\label{class_production_a29cfeb14daa371f325dda6f2542db0f5} 
+\index{Production@{Production}!operator=@{operator=}}
+\index{operator=@{operator=}!Production@{Production}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void Production\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_production}{Production}}}]{param\+Production }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador de asignación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Production} & Producción a la que se asignará el objeto \doxylink{class_production}{Production}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_production_ab543c4c4938fa07d1447884c97bdfe60}\label{class_production_ab543c4c4938fa07d1447884c97bdfe60} 
+\index{Production@{Production}!operator==@{operator==}}
+\index{operator==@{operator==}!Production@{Production}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Production\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_production}{Production}}}]{param\+Production\+Rule }\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador de comparación de igualdad. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Production\+Rule} & Producción con la que se comparará el objeto \doxylink{class_production}{Production}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+production.\+h\item 
+production.\+cc\end{DoxyCompactItemize}

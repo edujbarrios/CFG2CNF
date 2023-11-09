@@ -1,0 +1,44 @@
+\doxysection{production.\+h}
+\hypertarget{production_8h_source}{}\label{production_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//Universidad\ de\ la\ laguna}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//Curso\ 23\_34}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//Asignatura:\ Computabildad\ y\ algoritmia}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//autor:\ Eduardo\ José\ Barrios\ García}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//nombre\ de\ práctica:\ p07\_grammar2cnf}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}cadena.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}simbolo.h"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_production}{Production}}\ \{}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \textcolor{comment}{//\ Constructores\ y\ destructor}}
+\DoxyCodeLine{00018\ \ \ \mbox{\hyperlink{class_production}{Production}}(\mbox{\hyperlink{class_symbol}{Symbol}},\ \mbox{\hyperlink{class_chain}{Chain}});}
+\DoxyCodeLine{00019\ \ \ \mbox{\hyperlink{class_production}{Production}}(\mbox{\hyperlink{class_symbol}{Symbol}},\ \mbox{\hyperlink{class_symbol}{Symbol}});}
+\DoxyCodeLine{00020\ \ \ \mbox{\hyperlink{class_production_ab5b3060f9e0a2bc189844e426d693dab}{\string~Production}}();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \textcolor{comment}{//\ Getters\ y\ setters}}
+\DoxyCodeLine{00023\ \ \ \mbox{\hyperlink{class_chain}{Chain}}\ \mbox{\hyperlink{class_production_a33b36b860ceedd1c8a8ea150400a14a6}{getChain}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00024\ \ \ \mbox{\hyperlink{class_chain}{Chain}}\ \mbox{\hyperlink{class_production_a33b36b860ceedd1c8a8ea150400a14a6}{getChain}}();}
+\DoxyCodeLine{00025\ \ \ \mbox{\hyperlink{class_symbol}{Symbol}}\ \mbox{\hyperlink{class_production_ae71c349fb19cb41cdc7c2ab1b6834714}{getNonFinalSymbol}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ \ \ \mbox{\hyperlink{class_symbol}{Symbol}}\ \mbox{\hyperlink{class_production_ae71c349fb19cb41cdc7c2ab1b6834714}{getNonFinalSymbol}}();}
+\DoxyCodeLine{00027\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_production_a5f0810ffc00d6ebda3ee407c0759098c}{getType}}(std::set<Symbol>);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \textcolor{comment}{//\ Sobrecarga\ de\ operadores}}
+\DoxyCodeLine{00030\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_production_a23508bcf09d94b27c84dc3c4bb59bbc8}{operator<}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_production}{Production}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_production_a29cfeb14daa371f325dda6f2542db0f5}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_production}{Production}});}
+\DoxyCodeLine{00032\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_production_ab543c4c4938fa07d1447884c97bdfe60}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_production}{Production}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \textcolor{keyword}{friend}\ std::ostream\ \&operator<<(std::ostream\ \&,\ \mbox{\hyperlink{class_production}{Production}}\ \&);}
+\DoxyCodeLine{00034\ \ \ \textcolor{keyword}{friend}\ std::ostream\ \&operator<<(std::ostream\ \&,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_production}{Production}}\ \&);}
+\DoxyCodeLine{00035\ \ \ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ \ \ \mbox{\hyperlink{class_symbol}{Symbol}}\ nonTerminalSymbol\_;}
+\DoxyCodeLine{00038\ \ \ \mbox{\hyperlink{class_chain}{Chain}}\ chain\_;}
+\DoxyCodeLine{00039\ \};}
+
+\end{DoxyCode}

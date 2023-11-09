@@ -1,0 +1,54 @@
+\doxysection{grammar.\+h}
+\hypertarget{grammar_8h_source}{}\label{grammar_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//Universidad\ de\ la\ laguna}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//Curso\ 23\_34}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//Asignatura:\ Computabildad\ y\ algoritmia}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//autor:\ Eduardo\ José\ Barrios\ García}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//nombre\ de\ práctica:\ p07\_grammar2cnf}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}cadena.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}production.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}simbolo.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_grammar}{Grammar}}\ \{}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \textcolor{comment}{//\ Constructores\ y\ destructores}}
+\DoxyCodeLine{00019\ \ \ \mbox{\hyperlink{class_grammar}{Grammar}}();}
+\DoxyCodeLine{00020\ \ \ \mbox{\hyperlink{class_grammar}{Grammar}}(std::string);}
+\DoxyCodeLine{00021\ \ \ \mbox{\hyperlink{class_grammar}{Grammar}}(\mbox{\hyperlink{class_grammar}{Grammar}}\ \&);\ \textcolor{comment}{//\ Copia}}
+\DoxyCodeLine{00022\ \ \ \mbox{\hyperlink{class_grammar_a60e8bade0190ee9830d9c600e4216b36}{\string~Grammar}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \textcolor{comment}{//\ Operaciones}}
+\DoxyCodeLine{00025\ \ \ \textcolor{keywordtype}{void}\ addNonTerminalSymbol(\mbox{\hyperlink{class_symbol}{Symbol}});}
+\DoxyCodeLine{00026\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_grammar_a0f43976ad016e9fba598163d55a6450f}{addProductionRule}}(\mbox{\hyperlink{class_production}{Production}});}
+\DoxyCodeLine{00027\ \ \ \textcolor{keywordtype}{void}\ addTerminalSymbol(\mbox{\hyperlink{class_symbol}{Symbol}});}
+\DoxyCodeLine{00028\ \ \ \textcolor{keywordtype}{bool}\ checkGrammar();}
+\DoxyCodeLine{00029\ \ \ \textcolor{keywordtype}{void}\ convertToCNF();}
+\DoxyCodeLine{00030\ \ \ \mbox{\hyperlink{class_grammar}{Grammar}}\ getCNFGrammar();}
+\DoxyCodeLine{00031\ \ \ \textcolor{keywordtype}{bool}\ isRegular();}
+\DoxyCodeLine{00032\ \ \ \textcolor{keywordtype}{void}\ setStartSymbol(std::string);}
+\DoxyCodeLine{00033\ \ \ \textcolor{keywordtype}{void}\ writeFile(std::string);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \textcolor{comment}{//\ Sobrecarga\ de\ operadores}}
+\DoxyCodeLine{00037\ \ \ \textcolor{keywordtype}{void}\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_grammar}{Grammar}}\ \&);}
+\DoxyCodeLine{00038\ \ \ \textcolor{keyword}{friend}\ std::ostream\ \&\mbox{\hyperlink{class_grammar_a02d36b61524c927d7c8753fd3ac87e38}{operator<<}}(std::ostream\ \&,\ \mbox{\hyperlink{class_grammar}{Grammar}}\ \&);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00041\ \ \ \textcolor{keywordtype}{int}\ getNProductions(\mbox{\hyperlink{class_symbol}{Symbol}});}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00044\ \ \ \textcolor{comment}{//\ Alphabet\ alphabet\_;}}
+\DoxyCodeLine{00045\ \ \ std::set<Symbol>\ terminalSymbol\_;}
+\DoxyCodeLine{00046\ \ \ std::set<Symbol>\ nonTerminalSymbol\_;}
+\DoxyCodeLine{00047\ \ \ std::string\ startSymbolId\_;}
+\DoxyCodeLine{00048\ \ \ std::set<Production>\ productionRules\_;}
+\DoxyCodeLine{00049\ \};}
+
+\end{DoxyCode}

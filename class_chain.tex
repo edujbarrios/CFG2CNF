@@ -1,0 +1,329 @@
+\doxysection{Chain Class Reference}
+\hypertarget{class_chain}{}\label{class_chain}\index{Chain@{Chain}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_chain_a2d0a3ba99af01718bacff6aaae1f2560}\label{class_chain_a2d0a3ba99af01718bacff6aaae1f2560} 
+{\bfseries Chain} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_chain}{Chain}\+:\+: \doxylink{class_chain}{Chain} object Cadena vacía. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_chain_a10d75bfb767b1b947cd2398c81253875}{Chain}} (\mbox{\hyperlink{class_symbol}{Symbol}})
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_chain}{Chain}\+:\+: \doxylink{class_chain}{Chain} object Constructor con simbolo, todos menos cadena vacia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_chain_a7d40c42be506389a5c4b6a7acb8b6c29}{Chain}} (std\+::vector$<$ \mbox{\hyperlink{class_symbol}{Symbol}} $>$)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_chain}{Chain}\+:\+: \doxylink{class_chain}{Chain} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_chain_a2f4c70bd7cd6a33b96633552f66b1c53}{Chain}} (const \mbox{\hyperlink{class_chain}{Chain}} \&)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_chain}{Chain}\+:\+: \doxylink{class_chain}{Chain} object Constructor de copia de la clase. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_chain_a3ad81e3467e912641768b218c3904ac5}{Chain}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_chain}{Chain}\+:\+: \doxylink{class_chain}{Chain} object Constructor que, a partir de una cadena(std) va a añadiendo cada caracter de la cadena como si fuera un simbolo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chain_aa589c74255a091de42c03a2c02be25ae}{assign}} (int, \mbox{\hyperlink{class_symbol}{Symbol}})
+\begin{DoxyCompactList}\small\item\em Asigna un simbolo como simbolo de la cadena en la \textquotesingle{}index\textquotesingle{} posicion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_symbol}{Symbol}} \mbox{\hyperlink{class_chain_a1f6d1d14cb1cad8000772db209ba06bf}{back}} (void) const
+\begin{DoxyCompactList}\small\item\em Metodo para devolver el ultimo simbolo de la cadena. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_symbol}{Symbol}} \mbox{\hyperlink{class_chain_a072a90480fdb69fdceeefb7f417b8aef}{Position}} (int) const
+\begin{DoxyCompactList}\small\item\em Getter del index lemento de la cadena. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_chain_aaf97f1ab4c2c0efe12eec72de396f650}{Size}} (void) const
+\begin{DoxyCompactList}\small\item\em Devuelve la longitud de la cadena. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_symbol}{Symbol}} $>$\+::const\+\_\+iterator \mbox{\hyperlink{class_chain_af2abd653a03397d3e31caee818aecf32}{begin}} () const
+\begin{DoxyCompactList}\small\item\em "{}\+Sobrecarga"{} de la función begin para que se pueda recorrer el vector de simbolos en los for de tipo \textquotesingle{}auto\textquotesingle{} \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_symbol}{Symbol}} $>$\+::const\+\_\+iterator \mbox{\hyperlink{class_chain_a6da78591eebaf8a3fbf29dfa22f56da7}{end}} () const
+\begin{DoxyCompactList}\small\item\em "{}\+Sobrecarga"{} de la función begin para que se pueda recorrer el vector de simbolos en los for de tipo \textquotesingle{}auto\textquotesingle{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chain_a08d951079800d3fa85fa2e344b9ef444}{Add\+Symbol}} (\mbox{\hyperlink{class_symbol}{Symbol}})
+\begin{DoxyCompactList}\small\item\em Añadir simbolo a la cadena. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_chain_a721aade6fda63524b87984382f16afce}{in\+Symbol}} (\mbox{\hyperlink{class_symbol}{Symbol}})
+\begin{DoxyCompactList}\small\item\em Metodo para saber si la cadena contiene un simbolo pasado por parametro. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_chain_a24717a4b0ad25e56444805cad5849438}{operator$<$}} (const \mbox{\hyperlink{class_chain}{Chain}}) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador \textquotesingle{}\texorpdfstring{$<$}{<}\textquotesingle{} necesario para la clase std\+::set Compara si una cadena es mayor a otra. \end{DoxyCompactList}\item 
+\Hypertarget{class_chain_ab9f97b0b8e86d76f4045ba8d856450fc}\label{class_chain_ab9f97b0b8e86d76f4045ba8d856450fc} 
+void {\bfseries operator=} (const \mbox{\hyperlink{class_chain}{Chain}})
+\item 
+bool \mbox{\hyperlink{class_chain_afd36eb95a5c92d455a700f5e76222dc5}{operator==}} (const \mbox{\hyperlink{class_chain}{Chain}} \&) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga operador \textquotesingle{}==\textquotesingle{} para comparación del objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_chain}{Chain}} \mbox{\hyperlink{class_chain_ab1e67dba6e98e2504cf8e40e90105157}{Concatenate}} (const \mbox{\hyperlink{class_chain}{Chain}} \&, const \mbox{\hyperlink{class_chain}{Chain}} \&)
+\begin{DoxyCompactList}\small\item\em Operacion concatenar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_chain_a78920682b6469e52b8fd94b062043b05}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_chain}{Chain}} \&)
+\begin{DoxyCompactList}\small\item\em Sobrecarga operador \textquotesingle{}\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\textquotesingle{} para escritura del objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_chain_a10d75bfb767b1b947cd2398c81253875}\label{class_chain_a10d75bfb767b1b947cd2398c81253875} 
+\index{Chain@{Chain}!Chain@{Chain}}
+\index{Chain@{Chain}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{Chain()}{Chain()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Chain\+::\+Chain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symbol}{Symbol}}}]{param\+Symbol }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_chain}{Chain}\+:\+: \doxylink{class_chain}{Chain} object Constructor con simbolo, todos menos cadena vacia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Chain} & Primer simbolo de la cadena \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chain_a7d40c42be506389a5c4b6a7acb8b6c29}\label{class_chain_a7d40c42be506389a5c4b6a7acb8b6c29} 
+\index{Chain@{Chain}!Chain@{Chain}}
+\index{Chain@{Chain}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{Chain()}{Chain()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Chain\+::\+Chain (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_symbol}{Symbol}} $>$}]{symbol\+Vector }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_chain}{Chain}\+:\+: \doxylink{class_chain}{Chain} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em symbol\+Vector} & Vector de simbolos \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chain_a2f4c70bd7cd6a33b96633552f66b1c53}\label{class_chain_a2f4c70bd7cd6a33b96633552f66b1c53} 
+\index{Chain@{Chain}!Chain@{Chain}}
+\index{Chain@{Chain}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{Chain()}{Chain()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Chain\+::\+Chain (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_chain}{Chain}} \&}]{param\+Chain }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_chain}{Chain}\+:\+: \doxylink{class_chain}{Chain} object Constructor de copia de la clase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Chain} & Cadena \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chain_a3ad81e3467e912641768b218c3904ac5}\label{class_chain_a3ad81e3467e912641768b218c3904ac5} 
+\index{Chain@{Chain}!Chain@{Chain}}
+\index{Chain@{Chain}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{Chain()}{Chain()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Chain\+::\+Chain (\begin{DoxyParamCaption}\item[{std\+::string}]{param\+Chain }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_chain}{Chain}\+:\+: \doxylink{class_chain}{Chain} object Constructor que, a partir de una cadena(std) va a añadiendo cada caracter de la cadena como si fuera un simbolo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Chain} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_chain_a08d951079800d3fa85fa2e344b9ef444}\label{class_chain_a08d951079800d3fa85fa2e344b9ef444} 
+\index{Chain@{Chain}!AddSymbol@{AddSymbol}}
+\index{AddSymbol@{AddSymbol}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{AddSymbol()}{AddSymbol()}}
+{\footnotesize\ttfamily void Chain\+::\+Add\+Symbol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symbol}{Symbol}}}]{param\+Symbol }\end{DoxyParamCaption})}
+
+
+
+Añadir simbolo a la cadena. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Symbol} & \doxylink{class_symbol}{Symbol} a añadir \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chain_aa589c74255a091de42c03a2c02be25ae}\label{class_chain_aa589c74255a091de42c03a2c02be25ae} 
+\index{Chain@{Chain}!assign@{assign}}
+\index{assign@{assign}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{assign()}{assign()}}
+{\footnotesize\ttfamily void Chain\+::assign (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{class_symbol}{Symbol}}}]{param\+Symbol }\end{DoxyParamCaption})}
+
+
+
+Asigna un simbolo como simbolo de la cadena en la \textquotesingle{}index\textquotesingle{} posicion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Posicion de la cadena \\
+\hline
+{\em param\+Symbol} & Simbolo a establecer \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chain_a1f6d1d14cb1cad8000772db209ba06bf}\label{class_chain_a1f6d1d14cb1cad8000772db209ba06bf} 
+\index{Chain@{Chain}!back@{back}}
+\index{back@{back}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_symbol}{Symbol}} Chain\+::back (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Metodo para devolver el ultimo simbolo de la cadena. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_symbol}{Symbol} 
+\end{DoxyReturn}
+\Hypertarget{class_chain_af2abd653a03397d3e31caee818aecf32}\label{class_chain_af2abd653a03397d3e31caee818aecf32} 
+\index{Chain@{Chain}!begin@{begin}}
+\index{begin@{begin}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_symbol}{Symbol}} $>$\+::const\+\_\+iterator Chain\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+"{}\+Sobrecarga"{} de la función begin para que se pueda recorrer el vector de simbolos en los for de tipo \textquotesingle{}auto\textquotesingle{} 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Symbol$>$\+::const\+\_\+iterator Iterador a la primera posicion de la cadena 
+\end{DoxyReturn}
+\Hypertarget{class_chain_ab1e67dba6e98e2504cf8e40e90105157}\label{class_chain_ab1e67dba6e98e2504cf8e40e90105157} 
+\index{Chain@{Chain}!Concatenate@{Concatenate}}
+\index{Concatenate@{Concatenate}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{Concatenate()}{Concatenate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_chain}{Chain}} Chain\+::\+Concatenate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_chain}{Chain}} \&}]{original,  }\item[{const \mbox{\hyperlink{class_chain}{Chain}} \&}]{adder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Operacion concatenar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em original} & Primera cadena \\
+\hline
+{\em adder} & Cadena a concatenar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_chain}{Chain} -\/ Cadena resultante 
+\end{DoxyReturn}
+\Hypertarget{class_chain_a6da78591eebaf8a3fbf29dfa22f56da7}\label{class_chain_a6da78591eebaf8a3fbf29dfa22f56da7} 
+\index{Chain@{Chain}!end@{end}}
+\index{end@{end}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_symbol}{Symbol}} $>$\+::const\+\_\+iterator Chain\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+"{}\+Sobrecarga"{} de la función begin para que se pueda recorrer el vector de simbolos en los for de tipo \textquotesingle{}auto\textquotesingle{} 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Symbol$>$\+::const\+\_\+iterator Iterador a la ultima posicion de la cadena 
+\end{DoxyReturn}
+\Hypertarget{class_chain_a721aade6fda63524b87984382f16afce}\label{class_chain_a721aade6fda63524b87984382f16afce} 
+\index{Chain@{Chain}!inSymbol@{inSymbol}}
+\index{inSymbol@{inSymbol}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{inSymbol()}{inSymbol()}}
+{\footnotesize\ttfamily bool Chain\+::in\+Symbol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symbol}{Symbol}}}]{param\+Symbol }\end{DoxyParamCaption})}
+
+
+
+Metodo para saber si la cadena contiene un simbolo pasado por parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Symbol} & Simbolo a comprobar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ El simbolo esta en la cadena. 
+
+False -\/ El simbolo no esta en la cadena. 
+\end{DoxyReturn}
+\Hypertarget{class_chain_a24717a4b0ad25e56444805cad5849438}\label{class_chain_a24717a4b0ad25e56444805cad5849438} 
+\index{Chain@{Chain}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Chain\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_chain}{Chain}}}]{param\+Chain }\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga del operador \textquotesingle{}\texorpdfstring{$<$}{<}\textquotesingle{} necesario para la clase std\+::set Compara si una cadena es mayor a otra. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+Chain} & Cadena candidata a entrar en std\+::set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True -\/ La cadena no se encuentra en el conjunto. 
+
+False -\/ La cadena se encuentra en el conjunto. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+std\+::set 
+\end{DoxySeeAlso}
+\Hypertarget{class_chain_afd36eb95a5c92d455a700f5e76222dc5}\label{class_chain_afd36eb95a5c92d455a700f5e76222dc5} 
+\index{Chain@{Chain}!operator==@{operator==}}
+\index{operator==@{operator==}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Chain\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_chain}{Chain}} \&}]{param\+Chain }\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga operador \textquotesingle{}==\textquotesingle{} para comparación del objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em param\+\_\+chain} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\Hypertarget{class_chain_a072a90480fdb69fdceeefb7f417b8aef}\label{class_chain_a072a90480fdb69fdceeefb7f417b8aef} 
+\index{Chain@{Chain}!Position@{Position}}
+\index{Position@{Position}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{Position()}{Position()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_symbol}{Symbol}} Chain\+::\+Position (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+
+
+Getter del index lemento de la cadena. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Indice de la cadenq \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_symbol}{Symbol} 
+\end{DoxyReturn}
+\Hypertarget{class_chain_aaf97f1ab4c2c0efe12eec72de396f650}\label{class_chain_aaf97f1ab4c2c0efe12eec72de396f650} 
+\index{Chain@{Chain}!Size@{Size}}
+\index{Size@{Size}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{Size()}{Size()}}
+{\footnotesize\ttfamily int Chain\+::\+Size (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Devuelve la longitud de la cadena. 
+
+\begin{DoxyReturn}{Returns}
+int -\/ Longitud cadena 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_chain_a78920682b6469e52b8fd94b062043b05}\label{class_chain_a78920682b6469e52b8fd94b062043b05} 
+\index{Chain@{Chain}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Chain@{Chain}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_chain}{Chain}} \&}]{param\+Chain }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga operador \textquotesingle{}\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\textquotesingle{} para escritura del objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & \\
+\hline
+{\em param\+Chain} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::ostream\& 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cadena.\+h\item 
+cadena.\+cc\end{DoxyCompactItemize}
